@@ -1,0 +1,3 @@
+main_behaviour: Navigation
+sub_behaviours: 
+ - NavSub1

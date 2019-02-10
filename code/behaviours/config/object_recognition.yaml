@@ -1,0 +1,3 @@
+main_behaviour: Object_recognition
+sub_behaviours: 
+ - RunNetwork

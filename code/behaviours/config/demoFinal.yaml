@@ -1,0 +1,6 @@
+main_behaviour: DemoMain
+sub_behaviours: 
+ - NavSub
+ - ObjRecSub
+ - GraspSub
+ - AdjustSub

@@ -1,0 +1,11 @@
+roscore
+rosrun alice_object alice_object_node
+roslaunch alice_gazebo small_room.launch
+rosrun alice_gazebo set_objects_on_tables.py
+roslaunch m1n6s200_moveit_config m1n6s200_gazebo_demo.launch
+python action_server.py
+python dijkstra_planning.py
+python send_order.py
+roslaunch alice_nav alice_dijkstra.launch map:=navmapfile
+roslaunch alice_nav front_xtion.launch
+roslaunch behaviours run_behaviour.launch file:=demoFinal
